@@ -1,0 +1,103 @@
+.navbar{
+    background-color: rgb(253, 204, 204);
+    position: relative;
+}
+main{
+  margin-top: 25px;
+}
+main.centrar{
+    justify-content: center;
+}
+section > div > img.articulo{
+    width: 45rem;
+    height: 25rem;
+}
+.container-fluid {
+  height: 90%;
+  width: 80%;
+}
+.contenedor{
+    margin-top: 35px;
+}
+.carousel-inner img{
+  height: 655px;
+}
+h4{
+  justify-content: center;
+}
+.contenedorCont{
+    justify-content: center;
+    align-items: center;
+    background-color: bisque;
+    position: relative;
+    padding: 15px;
+}
+div > img.card-img-top{
+    width: 80%;
+    height: 80%;
+    justify-content: center;
+}
+
+div.gifCargando{
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  margin-bottom: -25px;
+}
+
+div > iframe.embeded-responsive{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+footer{
+    background-color: rgb(253, 204, 204);
+    margin-top: 25px;
+    margin-bottom: -45px;
+    padding: 15px;
+    text-align: center;
+    justify-content: center;
+}
+img.icono{
+    width: 2rem;
+    height: 2rem;
+}
+ul.lista {
+    list-style-type: none; 
+    justify-content: center;
+  }
+ul.lista li {
+    display: inline;
+    list-style-type: none;
+    padding: 15px;
+}
+
+/* Para editar los breakpoints */
+@media (max-width: 991px) {
+    section>div>h1{
+      font-size: 1.7em;
+    }
+    div> h2{
+      font-size: 1.4em;
+    }
+    .carousel-inner{
+      max-height: 18rem;
+    }
+    .container-fluid-mvs {
+      font-size: 1em;
+      width: 90%;
+    }
+    .gifCargando{
+      justify-items: center;
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  
