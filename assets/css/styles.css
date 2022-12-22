@@ -1,5 +1,5 @@
 .navbar{
-    background-color: rgb(252, 151, 151);
+    background-color: rgb(252, 244, 244);
     position: relative;
 }
 .container-fluid {
@@ -31,7 +31,7 @@ main.centrar{
   padding-right: 30px;
 }
 .card {
-  background-color: rgb(243, 231, 231);
+  background-color: rgb(247, 237, 237);
   padding: 20px;
   margin-top: 20px;
 }
@@ -40,13 +40,9 @@ section{
   padding-left: 30px;
   padding-right: 30px;
 }
-section > div > img.articulo{
-  width: 45rem;
-  height: 25rem;
-}
 h5.texto{
   text-align: justify;
-  margin: 15px;
+  margin: auto;
   padding: 10px;
 }
 
@@ -56,7 +52,7 @@ h5.texto{
 .carousel-inner img{
   height: 655px;
 }
-h2, h4{
+h1, h2, h4{
   text-align: center;
 }
 .contenedorCont{
@@ -81,6 +77,15 @@ div.gifCargando{
 iframe{
   position: relative;
 }
+iframe.enlace{
+  padding-left: 55px;
+}
+.platica, .articulo{
+  justify-items: right;
+  position: relative;
+  padding-left: 55px;
+}
+
 div > iframe.embeded-responsive{
   position: absolute;
   top: 0;
@@ -96,6 +101,7 @@ div > iframe.embeded-responsive{
   background-color: rgb(189, 12, 12);
   padding: 20px;
 }
+
 label{
   font-size: large;
 }
@@ -129,7 +135,7 @@ button{
   margin-top: 55px;
 }
 footer{
-    background-color: rgb(252, 151, 151);
+    background-color: rgb(252, 244, 244);
     margin-top: 25px;
     margin-bottom: -45px;
     padding: 15px;
@@ -171,7 +177,7 @@ ul.lista li {
     }
     .container-fluid-mvs {
       font-size: 1em;
-      width: 90%;
+      width: 80%;
     }
     .gifCargando{
       justify-items: center;
