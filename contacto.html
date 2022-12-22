@@ -10,52 +10,86 @@
 </head>
 <body>
     <!-- INICIA Header: Barra de navegación -->
-<!-- copiar -->
+    <nav class="navbar navbar-expand-lg  navbar-light">
+      <div class="container-fluid" >
+        <a class="navbar-brand" href="/index.html">
+        <img id="logo" src="/assets/img/lmogLogo.png" style="width:8rem; height: 8rem;">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/contacto.html">Contact</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/noticias.html">News SITES</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="/blogInteractivo.html">Blog</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link active dropdown-toggle" href="/proyectos.html" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Projects
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                <li class="nav-item"><a class="nav-link active" href="/nanoverse.html">nanoverse</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="/proyectos/appRSU.html">Manejo de Residuos Sólidos Urbanos en casa</a></li>
+                <li><a class="dropdown-item" href="/proyectos/redNanoMx.html">Red NanoMx</a></li>
+                
+<!--                   <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+              </ul>
+          </ul>
+            </li>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-dark" type="submit" style="color: rgb(252, 252, 252);">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <!-- TERMINA Header: Barra de navegación -->
 
     <!-- INICIA Contenido -->
-    <main class="centrar">
-        <h3>If you want to be in contact with me, you can <strong>follow me</strong> on...</h3>
-        <!-- Colocar redes sociales -->
-        <div class="container-fluid"></div>
-            
-        <!-- Comienza formulario para enviar comentarios -->    
-        <h3>or send me a message through the following form.</h3>
+    <main style="margin-top: 25px;">
+      <!-- Comienza formulario para enviar comentarios -->  
+      <div class="container">
+        <h4 style="margin-bottom: 25px;">You can send me a message!</h4>
+
           <form action="mailto: luismortigalvez@gmail.com" method="post">
-            <div class="row justify-content-center px-1 py-5">
-              <div class="col-lg-9">
-                <div class="contenedorCont">
-                  <div class="col-sm control-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="user_name" required>
-                  </div>
-                  <br>
-                  <div class="col-sm control-group">
-                    <label for="mail">Email address:</label>
-                    <input type="email" id="mail" name="user_mail" required>
-                  </div>
-                  <br>
-                  <div class="col-sm control-group">
-                    <label for="msg">Message:</label>
-                    <textarea id="msg" rows="6" name="user_message"></textarea>
-                  </div>
-                  <br>
-                  <div class="control-group">
-                    <button class="boton" type="submit">Enviar</button>
-                  </div>
-                  <br>   
-<!-- Evitar que se pueda mover el recuadro del texto --> 
-                </div>
-              </div>
+            
+                <label for="fname">Name</label>
+                <input type="text" id="fname" name="name" placeholder="" required>
+
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write your message here." style="height:200px" required></textarea>
+            
+                <button type="submit" value="Submit"><strong>SEND</strong></button>
+
             </div>
           </form>
-          <!-- Termina formulario -->
-
+        <!-- Termina formulario -->
+      </div>
     </main>
     <!-- TERMINA Contenido -->
 
     <!-- INICIA Footer -->
-
+    <footer>
+      <h4> <strong>Follow me</strong> on:</h4>
+        <ul class="lista">
+            <li><a href=""> <img src="../assets/img/redSocial/LIn.png" alt="LinkedIn" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/academia.png" alt="Academia.edu" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/rg.png" alt="ResearchGate" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/orcid.png" alt="ORCID" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/gh.png" alt="GitHub" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/fb.png" alt="Facebook" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/in.png" alt="Instagram" class="icono"> </a></li>
+            <li><a href=""> <img src="../assets/img/redSocial/tw.png" alt="Twitter" class="icono"> </a></li>
+        </ul> 
+  </footer>
     <!-- TERMINA Footer -->
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>

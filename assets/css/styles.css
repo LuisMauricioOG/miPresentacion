@@ -1,29 +1,63 @@
 .navbar{
-    background-color: rgb(253, 204, 204);
+    background-color: rgb(252, 151, 151);
     position: relative;
 }
+.container-fluid {
+  width: 98%;
+}
 main{
-  margin-top: 25px;
+  margin-top: 15px;
 }
 main.centrar{
     justify-content: center;
 }
+.imagen{
+  background-color: rgb(243, 231, 231);
+  position:relative;
+  width: 52%;
+  height: 60%;
+  margin-top: 8px;
+  margin-left: 23.5%;
+}
+.columnaIzq {
+  float: left;
+  width: 65%;
+  padding-left: 30px;
+}
+.columnaDer {
+  float: left;
+  width: 35%;
+  padding-left: 20px;
+  padding-right: 30px;
+}
+.card {
+  background-color: rgb(243, 231, 231);
+  padding: 20px;
+  margin-top: 20px;
+}
+section{
+  margin-top: 25px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
 section > div > img.articulo{
-    width: 45rem;
-    height: 25rem;
+  width: 45rem;
+  height: 25rem;
 }
-.container-fluid {
-  height: 90%;
-  width: 80%;
+h5.texto{
+  text-align: justify;
+  margin: 15px;
+  padding: 10px;
 }
+
 .contenedor{
     margin-top: 35px;
 }
 .carousel-inner img{
   height: 655px;
 }
-h4{
-  justify-content: center;
+h2, h4{
+  text-align: center;
 }
 .contenedorCont{
     justify-content: center;
@@ -32,10 +66,10 @@ h4{
     position: relative;
     padding: 15px;
 }
-div > img.card-img-top{
-    width: 80%;
-    height: 80%;
-    justify-content: center;
+.carrusel{
+  width: 75%;
+  height: 55%;
+  justify-self: center;
 }
 
 div.gifCargando{
@@ -44,7 +78,9 @@ div.gifCargando{
   width: 100%;
   margin-bottom: -25px;
 }
-
+iframe{
+  position: relative;
+}
 div > iframe.embeded-responsive{
   position: absolute;
   top: 0;
@@ -54,9 +90,46 @@ div > iframe.embeded-responsive{
   width: 100%;
   height: 100%;
 }
+.container {
+  color: white;
+  border-radius: 5px;
+  background-color: rgb(189, 12, 12);
+  padding: 20px;
+}
+label{
+  font-size: large;
+}
+input[type=text], select, textarea {
+  width: 100%; 
+  padding: 12px; 
+  border: 1px solid rgb(240, 237, 237); 
+  border-radius: 4px; 
+  box-sizing: border-box; 
+  margin-top: 6px; 
+  margin-bottom: 16px;
+  resize: vertical;
+}
 
+button{
+  color: rgb(83, 0, 0);
+  background-color: azure;
+  font-size:x-large;
+  border-radius: 5px;
+  vertical-align: middle;
+  width: 105px;
+  height: 65px;
+  text-align: center;
+  justify-content: center;
+  border-color: white;
+}
+.info {
+  background-color: #fddae0;
+  border-left: 6px solid #ee5f72;
+  margin-bottom: 125px;
+  margin-top: 55px;
+}
 footer{
-    background-color: rgb(253, 204, 204);
+    background-color: rgb(252, 151, 151);
     margin-top: 25px;
     margin-bottom: -45px;
     padding: 15px;
@@ -78,12 +151,20 @@ ul.lista li {
 }
 
 /* Para editar los breakpoints */
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
+    .columnaIzq, .columnaDer {
+    width: 100%;
+    padding: 0;
+  }
     section>div>h1{
       font-size: 1.7em;
     }
     div> h2{
       font-size: 1.4em;
+    }
+    .carrusel{
+      width: 33%;
+      height: 15%;
     }
     .carousel-inner{
       max-height: 18rem;
